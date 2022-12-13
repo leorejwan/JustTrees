@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JustTrees.NTree
+namespace JustTrees.NTree;
+
+public class NodeNTree
 {
-    internal class NodeNTree
+    public int Value { get; set; }
+    public LinkedList<NodeNTree>? children { get; set; }
+
+    public override string ToString()
     {
+        return "[ " + Value + "]";
     }
 }

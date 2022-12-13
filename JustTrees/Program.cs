@@ -1,4 +1,5 @@
 ﻿using JustTrees.BTree;
+using JustTrees.NTree;
 
 Console.WriteLine("Hello, World!");
 
@@ -25,5 +26,12 @@ binarySearchTree.Pre_order(binarySearchTree.ReturnRoot());
 Console.WriteLine();
 Console.WriteLine("PostOrder Traversal is: ");
 binarySearchTree.Post_Order(binarySearchTree.ReturnRoot());
+
+Console.WriteLine();
+NTree nTree = new NTree();
+nTree.Insert(30);
+nTree.Insert(50);
+
+
 
 Console.ReadLine();

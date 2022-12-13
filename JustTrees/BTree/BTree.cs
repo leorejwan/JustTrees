@@ -22,7 +22,7 @@ public class BTree
 
     public void Insert(int x)
     {
-        NodeBTree? newNode = new NodeBTree();
+        NodeBTree newNode = new NodeBTree();
         newNode.Value = x;
 
         if (root == null)
